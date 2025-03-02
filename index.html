@@ -4,93 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brantech E-Cyber Services & Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
-        <div class="container">
-            <h1>Brantech E-Cyber Services & Hub</h1>
-            <p class="subtitle">Get our services at the comfort of your home</p>
-        </div>
+        <h1>Brantech E-Cyber Services & Hub</h1>
+        <p class="subtitle">Get our services at the comfort of your home</p>
     </header>
 
-    <!-- Introduction Section -->
-    <section class="intro">
-        <h2>We offer fast, reliable, and affordable online cyber services</h2>
-    </section>
-
-    <!-- Services Section -->
     <section class="services">
-        <div class="service-box">
-            <h3>KUCCPS Applications & Student Portal Services</h3>
-            <button onclick="addToCart('KUCCPS')">🛒 Add to Cart</button>
-        </div>
-        <div class="service-box">
-            <h3>HELB Applications & Updates</h3>
-            <button onclick="addToCart('HELB')">🛒 Add to Cart</button>
-        </div>
-        <div class="service-box">
-            <h3>KRA Services (PIN Registration, Returns Filing)</h3>
-            <button onclick="addToCart('KRA')">🛒 Add to Cart</button>
-        </div>
-        <div class="service-box">
-            <h3>Government e-Citizen Services</h3>
-            <button onclick="addToCart('eCitizen')">🛒 Add to Cart</button>
-        </div>
-        <div class="service-box">
-            <h3>Document Processing & Editing</h3>
-            <button onclick="addToCart('Document Processing')">🛒 Add to Cart</button>
-        </div>
-        <div class="service-box">
-            <h3>CV Writing & Online Job Applications</h3>
-            <button onclick="addToCart('CV Writing')">🛒 Add to Cart</button>
-        </div>
-        <div class="service-box">
-            <h3>General Online Assistance</h3>
-            <button onclick="addToCart('General Assistance')">🛒 Add to Cart</button>
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>KUCCPS Applications</h3>
+                <p>Assistance with KUCCPS applications & student portal services.</p>
+                <button onclick="addToCart('KUCCPS Applications')">🛒 Add to Cart</button>
+            </div>
+
+            <div class="service-box">
+                <h3>HELB Applications</h3>
+                <p>Application and updates for HELB loans and funding.</p>
+                <button onclick="addToCart('HELB Applications')">🛒 Add to Cart</button>
+            </div>
+
+            <div class="service-box">
+                <h3>KRA Services</h3>
+                <p>PIN registration, returns filing, and tax compliance services.</p>
+                <button onclick="addToCart('KRA Services')">🛒 Add to Cart</button>
+            </div>
+
+            <div class="service-box">
+                <h3>e-Citizen Services</h3>
+                <p>Government services including NTSA, business registration, etc.</p>
+                <button onclick="addToCart('e-Citizen Services')">🛒 Add to Cart</button>
+            </div>
+
+            <div class="service-box">
+                <h3>Document Processing</h3>
+                <p>Editing and processing of important documents.</p>
+                <button onclick="addToCart('Document Processing')">🛒 Add to Cart</button>
+            </div>
+
+            <div class="service-box">
+                <h3>CV Writing</h3>
+                <p>Professional CV writing and job application services.</p>
+                <button onclick="addToCart('CV Writing')">🛒 Add to Cart</button>
+            </div>
+
+            <div class="service-box">
+                <h3>General Online Assistance</h3>
+                <p>Help with various online tasks and services.</p>
+                <button onclick="addToCart('General Online Assistance')">🛒 Add to Cart</button>
+            </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
+    <div id="cart-info">
+        <h3>Your Cart</h3>
+        <ul id="cart-list"></ul>
+        <button class="whatsapp-btn" onclick="proceedToWhatsApp()">📩 Proceed to WhatsApp Order</button>
+    </div>
+
     <section class="about">
-        <h2>About Us</h2>
-        <p>Brantech E-Cyber Hub delivers innovative cyber services designed to safeguard your digital presence. We offer professional, reliable services tailored to your needs. Connect with us for a safer digital future.</p>
+        <h2>About Brantech E-Cyber Hub</h2>
+        <p>
+            Brantech E-Cyber Hub delivers innovative cyber services designed to safeguard your digital presence. 
+            From security solutions to privacy protection, we offer professional, reliable services tailored to your needs. 
+            Connect with us for a safer digital future.
+        </p>
     </section>
 
-    <!-- Proceed to WhatsApp Section -->
-    <section class="whatsapp-order">
-        <button onclick="proceedToWhatsApp()">📲 Proceed to WhatsApp for Orders</button>
-    </section>
-
-    <!-- FAQ Section -->
     <section class="faq">
         <h2>Frequently Asked Questions (FAQs)</h2>
-        <div class="faq-item">
-            <p><strong>Q: What services does Brantech E-Cyber Services and Hub offer?</strong></p>
-            <p>A: We provide online cyber services, including document processing, government e-services (eCitizen, KRA, NTSA, etc.), academic services, business registration, web development, and graphic design.</p>
-        </div>
-        <div class="faq-item">
-            <p><strong>Q: How do I proceed with the services?</strong></p>
-            <p>A: Select a service, add it to your cart, and proceed to WhatsApp for an easy and seamless ordering process.</p>
-        </div>
-        <div class="faq-item">
-            <p><strong>Q: Are the services affordable?</strong></p>
-            <p>A: Yes, we offer fast, reliable, and affordable services tailored to your needs. Contact us for detailed pricing.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <p>📞 Contact us today for seamless e-services!</p>
-        <p>+254790889066 / +254789296373</p>
-        <p>Email: omutitibrandon@gmail.com 📧</p>
-        <p>Feel free to reach out for any inquiries or assistance with our services.</p>
+        <ul>
+            <li><strong>1. What services do you offer?</strong> We offer KUCCPS, HELB, KRA, e-Citizen, document processing, CV writing, and online assistance.</li>
+            <li><strong>2. How can I place an order?</strong> Simply add services to the cart and click "Proceed to WhatsApp Order".</li>
+            <li><strong>3. How long does service delivery take?</strong> Most services are processed within 24-48 hours.</li>
+            <li><strong>4. Do you offer in-person consultations?</strong> No, all our services are provided online for your convenience.</li>
+            <li><strong>5. How do I contact customer support?</strong> Reach us via WhatsApp at +254790889066 or email at omutitibrandon@gmail.com.</li>
+            <li><strong>6. What payment methods do you accept?</strong> We accept M-Pesa and bank transfers.</li>
+            <li><strong>7. Is my personal information safe with you?</strong> Yes, we ensure high confidentiality in handling your data.</li>
+            <li><strong>8. Can I get a refund?</strong> Refunds are only applicable if the service is not delivered as agreed.</li>
+            <li><strong>9. Do you work on weekends?</strong> Yes, we operate Monday-Saturday.</li>
+            <li><strong>10. Can I track my order?</strong> Yes, we provide updates via WhatsApp or email.</li>
+        </ul>
     </section>
 
     <footer>
-        <p>&copy; 2025 Brantech E-Cyber Services & Hub. All rights reserved.</p>
+        <p>📞 Contact us: +254790889066 / +254789296373</p>
+        <p>📧 Email: <a href="mailto:omutitibrandon@gmail.com">omutitibrandon@gmail.com</a></p>
+        <p>💡 Feel free to reach out for any inquiries or assistance with our services.</p>
     </footer>
 
     <script src="script.js"></script>
