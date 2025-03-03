@@ -29,3 +29,17 @@ function proceedToWhatsApp() {
         alert('Your cart is empty! Please add services before proceeding.');
     }
 }
+
+function searchServices() {
+    const input = document.getElementById('search-bar').value.toUpperCase();
+    const serviceItems = document.querySelectorAll('.service-item');
+    
+    serviceItems.forEach(item => {
+        const serviceName = item.textContent || item.innerText;
+        if (serviceName.toUpperCase().includes(input)) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
